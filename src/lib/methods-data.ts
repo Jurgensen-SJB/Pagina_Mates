@@ -109,7 +109,7 @@ export function getMethodsByCategory(category: string): NumericalMethod[] {
  * Categorías disponibles con sus labels.
  */
 export const CATEGORIES = [
-  { id: 'root-finding', name: 'Raíces de Ecuaciones', icon: '🔍', color: '#6366f1' },
-  { id: 'integration', name: 'Integración Numérica', icon: '∫', color: '#06b6d4' },
-  { id: 'interpolation', name: 'Interpolación', icon: '📊', color: '#8b5cf6' },
+  { id: 'root-finding', name: 'Raíces de Ecuaciones', icon: '🔍', color: '#f97316' },
+  { id: 'integration', name: 'Integración Numérica', icon: '∫', color: '#f59e0b' },
+  { id: 'interpolation', name: 'Interpolación', icon: '📊', color: '#fb923c' },
 ] as const;

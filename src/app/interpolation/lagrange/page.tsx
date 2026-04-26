@@ -48,7 +48,7 @@ export default function LagrangePage() {
       <div className="mb-8 animate-fadeInUp">
         <div className="flex items-center gap-3 mb-2">
           <span className="text-3xl">{method.icon}</span>
-          <h1 className="text-3xl font-bold" style={{ background: 'linear-gradient(135deg, #8b5cf6, #ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{method.name}</h1>
+          <h1 className="text-3xl font-bold" style={{ background: 'linear-gradient(135deg, #f97316, #f59e0b)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{method.name}</h1>
         </div>
         <p style={{ color: 'var(--text-secondary)' }}>{method.description}</p>
         <div className="mt-3 p-3 rounded-lg text-sm" style={{ background: 'var(--surface)', color: 'var(--text-muted)' }}>
@@ -141,3 +141,4 @@ export default function LagrangePage() {
     </div>
   );
 }
+

@@ -39,8 +39,10 @@ export default function SearchBar({ onSearch, placeholder = 'Buscar método...' 
         value={query}
         onChange={(e) => handleChange(e.target.value)}
         placeholder={placeholder}
-        className="input-field pl-11 pr-10"
+        className="input-field"
         style={{
+          paddingLeft: '2.75rem',
+          paddingRight: '2.5rem',
           background: 'var(--surface)',
           borderColor: query ? 'var(--primary)' : 'var(--border)',
         }}

@@ -14,7 +14,7 @@ export default function InterpolationPage() {
         </Link>
         <div className="flex items-center gap-3 mt-2">
           <span className="text-3xl">📊</span>
-          <h1 className="text-3xl font-bold" style={{ background: 'linear-gradient(135deg, #8b5cf6, #ec4899)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Interpolación</h1>
+          <h1 className="text-3xl font-bold" style={{ background: 'linear-gradient(135deg, #f97316, #f59e0b)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Interpolación</h1>
         </div>
         <p className="mt-2" style={{ color: 'var(--text-secondary)' }}>
           Métodos para construir polinomios que pasen por un conjunto de puntos dados.
@@ -30,3 +30,4 @@ export default function InterpolationPage() {
     </div>
   );
 }
+

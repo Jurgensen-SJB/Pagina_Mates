@@ -18,9 +18,9 @@ const categoryRoutes: Record<string, string> = {
 };
 
 const categoryColors: Record<string, string> = {
-  'root-finding': '#6366f1',
-  'integration': '#06b6d4',
-  'interpolation': '#8b5cf6',
+  'root-finding': '#f97316',
+  'integration':  '#f59e0b',
+  'interpolation':'#fb923c',
 };
 
 export default function MethodCard({ id, name, category, description, icon, index = 0 }: MethodCardProps) {
