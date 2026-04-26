@@ -68,16 +68,11 @@ export default function StarField() {
       const W = canvas.width;
       const H = canvas.height;
 
-      /* Clear with the Grok warm-dark background */
-      ctx.fillStyle = '#0f0d0c';
+      /* Clear with deep dark background */
+      ctx.fillStyle = '#09090b';
       ctx.fillRect(0, 0, W, H);
 
-      /* Very subtle orange nebula glow at top */
-      const nebulaGrad = ctx.createRadialGradient(W / 2, -H * 0.1, 0, W / 2, -H * 0.1, W * 0.7);
-      nebulaGrad.addColorStop(0, 'rgba(249,115,22,0.045)');
-      nebulaGrad.addColorStop(1, 'rgba(0,0,0,0)');
-      ctx.fillStyle = nebulaGrad;
-      ctx.fillRect(0, 0, W, H);
+
 
       /* Draw & drift stars */
       starsRef.current.forEach(star => {
@@ -93,21 +88,12 @@ export default function StarField() {
         ctx.beginPath();
         ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
 
-        /* Near stars get a warm orange tint, far ones stay white/cool */
-        const warmth = Math.round(star.z * 20);
-        ctx.fillStyle = `rgba(${235 + warmth}, ${225 + warmth * 0.3}, ${215}, ${alpha})`;
+        /* Near stars get a cool blue-white tint, far ones stay pure white */
+        const warmth = Math.round(star.z * 15);
+        ctx.fillStyle = `rgba(${210 + warmth}, ${215 + warmth}, ${235 + warmth * 0.5}, ${alpha})`;
         ctx.fill();
 
-        /* Soft glow for the larger (near) stars */
-        if (star.size > 1.4) {
-          ctx.beginPath();
-          ctx.arc(star.x, star.y, star.size * 2.5, 0, Math.PI * 2);
-          const glow = ctx.createRadialGradient(star.x, star.y, 0, star.x, star.y, star.size * 2.5);
-          glow.addColorStop(0, `rgba(255,200,150,${alpha * 0.25})`);
-          glow.addColorStop(1, 'rgba(0,0,0,0)');
-          ctx.fillStyle = glow;
-          ctx.fill();
-        }
+
       });
 
       frameRef.current = requestAnimationFrame(draw);

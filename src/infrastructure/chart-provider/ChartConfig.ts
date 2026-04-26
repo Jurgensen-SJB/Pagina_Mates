@@ -3,21 +3,21 @@
  */
 export const chartConfig = {
   colors: {
-    primary:       '#f97316',
-    secondary:     '#f59e0b',
+    primary:       '#818cf8',            // índigo principal
+    secondary:     '#a78bfa',            // violeta
     success:       '#22c55e',
     danger:        '#ef4444',
-    warning:       '#fbbf24',
-    grid:          '#2a2a2a',
-    gridLight:     '#3d3d3d',
-    axis:          '#57534e',
-    functionLine:  '#f97316',
+    warning:       '#fcd34d',
+    grid:          '#1e1e2e',
+    gridLight:     '#2a2a40',
+    axis:          '#52525b',
+    functionLine:  '#818cf8',            // índigo
     rootPoint:     '#ef4444',
-    area:          'rgba(249, 115, 22, 0.15)',
+    area:          'rgba(129, 140, 248, 0.12)',
     convergence:   '#22c55e',
-    toleranceLine: '#f59e0b',
-    dataPoints:    '#fb923c',
-    interpolant:   '#f59e0b',
+    toleranceLine: '#fcd34d',
+    dataPoints:    '#67e8f9',            // cyan para puntos de datos
+    interpolant:   '#a78bfa',            // violeta para interpolante
   },
   margins: { top: 20, right: 30, bottom: 20, left: 30 },
   maxDataPoints: 500,

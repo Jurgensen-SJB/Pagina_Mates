@@ -23,11 +23,8 @@ export default function Header() {
             </div>
             <div>
               <h1 className="text-base font-bold leading-tight" style={{ color: 'var(--text-primary)' }}>
-                Métodos Numéricos
+                Calculadora de Métodos Numéricos
               </h1>
-              <p className="text-xs leading-tight" style={{ color: 'var(--text-muted)' }}>
-                Calculadora Interactiva
-              </p>
             </div>
           </Link>
 

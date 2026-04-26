@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Métodos Numéricos | Calculadora Interactiva",
+  title: "Calculadora de Métodos Numéricos",
   description:
     "Herramienta interactiva para resolver problemas de métodos numéricos: Bisección, Newton-Raphson, Simpson, Lagrange y más. Visualización paso a paso con gráficas dinámicas.",
   keywords: [
