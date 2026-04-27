@@ -8,10 +8,10 @@
 :root {
   /* Backgrounds */
   --background:        transparent;
-  --surface:           rgba(15, 15, 20, 0.75);
-  --surface-hover:     rgba(22, 22, 30, 0.85);
-  --surface-elevated:  rgba(18, 18, 26, 0.80);
-  --surface-card:      rgba(12, 12, 18, 0.70);
+  --surface:           rgba(15, 15, 22, 0.92);
+  --surface-hover:     rgba(22, 22, 34, 0.96);
+  --surface-elevated:  rgba(18, 18, 28, 0.95);
+  --surface-card:      rgba(12, 12, 20, 0.90);
 
   /* Borders */
   --border:            #1e1e2e;
@@ -131,17 +131,17 @@ body {
    CARD — Minimalista, sin blur excesivo
    ============================================================ */
 .glass-card {
-  background: rgba(18, 15, 13, 0.72);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(44, 40, 38, 0.9);
+  background: rgba(16, 14, 22, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(55, 50, 70, 0.95);
   border-radius: var(--radius-lg);
   transition: border-color var(--transition-base), box-shadow var(--transition-base), background var(--transition-base);
 }
 
 .glass-card:hover {
-  background: rgba(20, 20, 30, 0.82);
-  border-color: rgba(129, 140, 248, 0.25);
+  background: rgba(22, 20, 34, 0.96);
+  border-color: rgba(129, 140, 248, 0.35);
   box-shadow: var(--shadow-glow-sm);
 }
 
@@ -298,6 +298,46 @@ body {
 
 .data-table tbody tr.error-row {
   background: var(--danger-subtle);
+}
+
+/* ============================================================
+   TABLE RESPONSIVE — Mobile adjustments
+   ============================================================ */
+.table-responsive-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  /* subtle gradient fade hint on right to indicate scroll */
+  background:
+    linear-gradient(to right, transparent, transparent),
+    linear-gradient(to right, rgba(129,140,248,0.06), rgba(129,140,248,0.06));
+  background-attachment: local, scroll;
+}
+
+/* Mobile: tighter cells and smaller font */
+@media (max-width: 640px) {
+  .data-table {
+    font-size: 0.72rem;
+    min-width: 480px; /* force horizontal scroll before this */
+  }
+
+  .data-table thead th {
+    font-size: 0.6rem;
+    padding: 8px 10px;
+    letter-spacing: 0.04em;
+  }
+
+  .data-table tbody td {
+    padding: 7px 10px;
+    font-size: 0.72rem;
+  }
+
+  /* Reduce result summary card to single-column on mobile */
+  .result-grid-mobile {
+    grid-template-columns: 1fr 1fr !important;
+  }
 }
 
 /* ============================================================
