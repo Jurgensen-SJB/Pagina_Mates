@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "Bisección-base-1",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "¿Cuál es el objetivo principal del método de Bisección?",
+    "options": [
+      "Encontrar la raíz de una ecuación no lineal f(x) = 0.",
+      "Encontrar la derivada",
+      "Encontrar la integral",
+      "Resolver sistemas lineales"
+    ],
+    "correctAnswer": "Encontrar la raíz de una ecuación no lineal f(x) = 0.",
+    "explanationBase": "Concepto general de root-finding aplicado a Bisección."
+  },
+  {
+    "id": "Bisección-base-2",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "En el método de Bisección, si el error de la iteración actual es E, ¿cuál es el criterio de parada más común?",
+    "options": [
+      "Cuando el error aumenta",
+      "Cuando se alcanza 1 iteración",
+      "Cuando el error es cero exacto",
+      "Cuando el error absoluto es menor a una tolerancia predefinida."
+    ],
+    "correctAnswer": "Cuando el error absoluto es menor a una tolerancia predefinida.",
+    "explanationBase": "Concepto general de root-finding aplicado a Bisección."
+  },
+  {
+    "id": "Bisección-base-3",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "¿Qué pasa si la función no cruza el eje x en el método de Bisección?",
+    "options": [
+      "El resultado es infinito",
+      "El método no podrá encontrar una raíz real.",
+      "El método converge más rápido",
+      "El método encuentra una raíz compleja siempre"
+    ],
+    "correctAnswer": "El método no podrá encontrar una raíz real.",
+    "explanationBase": "Concepto general de root-finding aplicado a Bisección."
+  },
+  {
+    "id": "Bisección-base-4",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "Si aplicamos Bisección y el valor de f(x) se acerca a cero, esto indica que:",
+    "options": [
+      "Nos estamos acercando a la raíz.",
+      "El método está divergiendo",
+      "La función no tiene solución",
+      "Hay un error de cálculo"
+    ],
+    "correctAnswer": "Nos estamos acercando a la raíz.",
+    "explanationBase": "Concepto general de root-finding aplicado a Bisección."
+  },
+  {
+    "id": "Bisección-req-5",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Bisección?",
+    "options": [
+      "Requiere calcular integrales triples.",
+      "Solo funciona para números enteros negativos.",
+      "No tiene ningún requerimiento especial.",
+      "La función debe ser continua y f(a)*f(b) < 0."
+    ],
+    "correctAnswer": "La función debe ser continua y f(a)*f(b) < 0.",
+    "explanationBase": "Es un fundamento matemático clave para que Bisección funcione."
+  },
+  {
+    "id": "Bisección-form-6",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Bisección?",
+    "options": [
+      "Multiplicando la función por una constante aleatoria.",
+      "Sumando todos los valores de x y dividiendo por cero.",
+      "xr = (a+b)/2",
+      "Ignorando los valores de la función y usando solo derivadas."
+    ],
+    "correctAnswer": "xr = (a+b)/2",
+    "explanationBase": "Esta es la base operativa del método numérico de Bisección."
+  },
+  {
+    "id": "Bisección-conv-7",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Bisección?",
+    "options": [
+      "El error aumenta en cada iteración exponencialmente.",
+      "La convergencia es completamente impredecible.",
+      "Siempre diverge y nunca encuentra la solución.",
+      "Lineal (lenta pero segura)."
+    ],
+    "correctAnswer": "Lineal (lenta pero segura).",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Bisección."
+  },
+  {
+    "id": "Bisección-ext-8",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "¿Qué propiedad adicional caracteriza al método de Bisección?",
+    "options": [
+      "Fue descubierto en el año 2020.",
+      "Es un método que no se usa en la práctica actual.",
+      "Se basa en el Teorema del Valor Intermedio (Bolzano).",
+      "Solo se puede calcular a mano y no en computadora."
+    ],
+    "correctAnswer": "Se basa en el Teorema del Valor Intermedio (Bolzano).",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Bisección-var-9",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "Si durante la ejecución de Bisección nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-10",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "En el contexto de la programación computacional de Bisección, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-11",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "Para el método de Bisección, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-12",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "Si durante la ejecución de Bisección nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-13",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "En el contexto de la programación computacional de Bisección, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-14",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "Para el método de Bisección, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-15",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "Si durante la ejecución de Bisección nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-16",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "En el contexto de la programación computacional de Bisección, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-17",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "Para el método de Bisección, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-18",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "Si durante la ejecución de Bisección nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-19",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "En el contexto de la programación computacional de Bisección, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Bisección-var-20",
+    "topic": "root-finding",
+    "method": "Bisección",
+    "question": "Para el método de Bisección, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-base-21",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "¿Cuál es el objetivo principal del método de Newton-Raphson?",
+    "options": [
+      "Encontrar la derivada",
+      "Encontrar la raíz de una ecuación no lineal f(x) = 0.",
+      "Encontrar la integral",
+      "Resolver sistemas lineales"
+    ],
+    "correctAnswer": "Encontrar la raíz de una ecuación no lineal f(x) = 0.",
+    "explanationBase": "Concepto general de root-finding aplicado a Newton-Raphson."
+  },
+  {
+    "id": "Newton-Raphson-base-22",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "En el método de Newton-Raphson, si el error de la iteración actual es E, ¿cuál es el criterio de parada más común?",
+    "options": [
+      "Cuando se alcanza 1 iteración",
+      "Cuando el error absoluto es menor a una tolerancia predefinida.",
+      "Cuando el error aumenta",
+      "Cuando el error es cero exacto"
+    ],
+    "correctAnswer": "Cuando el error absoluto es menor a una tolerancia predefinida.",
+    "explanationBase": "Concepto general de root-finding aplicado a Newton-Raphson."
+  },
+  {
+    "id": "Newton-Raphson-base-23",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "¿Qué pasa si la función no cruza el eje x en el método de Newton-Raphson?",
+    "options": [
+      "El resultado es infinito",
+      "El método no podrá encontrar una raíz real.",
+      "El método converge más rápido",
+      "El método encuentra una raíz compleja siempre"
+    ],
+    "correctAnswer": "El método no podrá encontrar una raíz real.",
+    "explanationBase": "Concepto general de root-finding aplicado a Newton-Raphson."
+  },
+  {
+    "id": "Newton-Raphson-base-24",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "Si aplicamos Newton-Raphson y el valor de f(x) se acerca a cero, esto indica que:",
+    "options": [
+      "El método está divergiendo",
+      "Nos estamos acercando a la raíz.",
+      "Hay un error de cálculo",
+      "La función no tiene solución"
+    ],
+    "correctAnswer": "Nos estamos acercando a la raíz.",
+    "explanationBase": "Concepto general de root-finding aplicado a Newton-Raphson."
+  },
+  {
+    "id": "Newton-Raphson-req-25",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Newton-Raphson?",
+    "options": [
+      "Se requiere conocer la derivada f'(x).",
+      "No tiene ningún requerimiento especial.",
+      "Solo funciona para números enteros negativos.",
+      "Requiere calcular integrales triples."
+    ],
+    "correctAnswer": "Se requiere conocer la derivada f'(x).",
+    "explanationBase": "Es un fundamento matemático clave para que Newton-Raphson funcione."
+  },
+  {
+    "id": "Newton-Raphson-form-26",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Newton-Raphson?",
+    "options": [
+      "Ignorando los valores de la función y usando solo derivadas.",
+      "Sumando todos los valores de x y dividiendo por cero.",
+      "x1 = x0 - f(x0)/f'(x0)",
+      "Multiplicando la función por una constante aleatoria."
+    ],
+    "correctAnswer": "x1 = x0 - f(x0)/f'(x0)",
+    "explanationBase": "Esta es la base operativa del método numérico de Newton-Raphson."
+  },
+  {
+    "id": "Newton-Raphson-conv-27",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Newton-Raphson?",
+    "options": [
+      "Cuadrática (muy rápida cerca de la raíz).",
+      "Siempre diverge y nunca encuentra la solución.",
+      "La convergencia es completamente impredecible.",
+      "El error aumenta en cada iteración exponencialmente."
+    ],
+    "correctAnswer": "Cuadrática (muy rápida cerca de la raíz).",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Newton-Raphson."
+  },
+  {
+    "id": "Newton-Raphson-ext-28",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "¿Qué propiedad adicional caracteriza al método de Newton-Raphson?",
+    "options": [
+      "Falla si la derivada se hace cero.",
+      "Fue descubierto en el año 2020.",
+      "Es un método que no se usa en la práctica actual.",
+      "Solo se puede calcular a mano y no en computadora."
+    ],
+    "correctAnswer": "Falla si la derivada se hace cero.",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Newton-Raphson-var-29",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "Si durante la ejecución de Newton-Raphson nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-30",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "En el contexto de la programación computacional de Newton-Raphson, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-31",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "Para el método de Newton-Raphson, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-32",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "Si durante la ejecución de Newton-Raphson nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-33",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "En el contexto de la programación computacional de Newton-Raphson, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-34",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "Para el método de Newton-Raphson, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Detener el algoritmo inmediatamente.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Cambiar a un método analítico.",
+      "Redondear siempre al entero más cercano."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-35",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "Si durante la ejecución de Newton-Raphson nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-36",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "En el contexto de la programación computacional de Newton-Raphson, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-37",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "Para el método de Newton-Raphson, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Detener el algoritmo inmediatamente.",
+      "Redondear siempre al entero más cercano.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-38",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "Si durante la ejecución de Newton-Raphson nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-39",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "En el contexto de la programación computacional de Newton-Raphson, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Newton-Raphson-var-40",
+    "topic": "root-finding",
+    "method": "Newton-Raphson",
+    "question": "Para el método de Newton-Raphson, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Cambiar a un método analítico.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-base-41",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "¿Cuál es el objetivo principal del método de Secante?",
+    "options": [
+      "Encontrar la raíz de una ecuación no lineal f(x) = 0.",
+      "Encontrar la derivada",
+      "Encontrar la integral",
+      "Resolver sistemas lineales"
+    ],
+    "correctAnswer": "Encontrar la raíz de una ecuación no lineal f(x) = 0.",
+    "explanationBase": "Concepto general de root-finding aplicado a Secante."
+  },
+  {
+    "id": "Secante-base-42",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "En el método de Secante, si el error de la iteración actual es E, ¿cuál es el criterio de parada más común?",
+    "options": [
+      "Cuando se alcanza 1 iteración",
+      "Cuando el error absoluto es menor a una tolerancia predefinida.",
+      "Cuando el error aumenta",
+      "Cuando el error es cero exacto"
+    ],
+    "correctAnswer": "Cuando el error absoluto es menor a una tolerancia predefinida.",
+    "explanationBase": "Concepto general de root-finding aplicado a Secante."
+  },
+  {
+    "id": "Secante-base-43",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "¿Qué pasa si la función no cruza el eje x en el método de Secante?",
+    "options": [
+      "El método converge más rápido",
+      "El método no podrá encontrar una raíz real.",
+      "El método encuentra una raíz compleja siempre",
+      "El resultado es infinito"
+    ],
+    "correctAnswer": "El método no podrá encontrar una raíz real.",
+    "explanationBase": "Concepto general de root-finding aplicado a Secante."
+  },
+  {
+    "id": "Secante-base-44",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "Si aplicamos Secante y el valor de f(x) se acerca a cero, esto indica que:",
+    "options": [
+      "La función no tiene solución",
+      "Hay un error de cálculo",
+      "El método está divergiendo",
+      "Nos estamos acercando a la raíz."
+    ],
+    "correctAnswer": "Nos estamos acercando a la raíz.",
+    "explanationBase": "Concepto general de root-finding aplicado a Secante."
+  },
+  {
+    "id": "Secante-req-45",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Secante?",
+    "options": [
+      "Requiere dos puntos iniciales, pero no necesita calcular la derivada.",
+      "No tiene ningún requerimiento especial.",
+      "Solo funciona para números enteros negativos.",
+      "Requiere calcular integrales triples."
+    ],
+    "correctAnswer": "Requiere dos puntos iniciales, pero no necesita calcular la derivada.",
+    "explanationBase": "Es un fundamento matemático clave para que Secante funcione."
+  },
+  {
+    "id": "Secante-form-46",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Secante?",
+    "options": [
+      "Multiplicando la función por una constante aleatoria.",
+      "Sumando todos los valores de x y dividiendo por cero.",
+      "Ignorando los valores de la función y usando solo derivadas.",
+      "Usa una aproximación de la derivada mediante diferencias finitas."
+    ],
+    "correctAnswer": "Usa una aproximación de la derivada mediante diferencias finitas.",
+    "explanationBase": "Esta es la base operativa del método numérico de Secante."
+  },
+  {
+    "id": "Secante-conv-47",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Secante?",
+    "options": [
+      "La convergencia es completamente impredecible.",
+      "Siempre diverge y nunca encuentra la solución.",
+      "Superlineal (entre lineal y cuadrática).",
+      "El error aumenta en cada iteración exponencialmente."
+    ],
+    "correctAnswer": "Superlineal (entre lineal y cuadrática).",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Secante."
+  },
+  {
+    "id": "Secante-ext-48",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "¿Qué propiedad adicional caracteriza al método de Secante?",
+    "options": [
+      "Es una alternativa a Newton-Raphson cuando la derivada es difícil de obtener.",
+      "Solo se puede calcular a mano y no en computadora.",
+      "Es un método que no se usa en la práctica actual.",
+      "Fue descubierto en el año 2020."
+    ],
+    "correctAnswer": "Es una alternativa a Newton-Raphson cuando la derivada es difícil de obtener.",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Secante-var-49",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "Si durante la ejecución de Secante nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-50",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "En el contexto de la programación computacional de Secante, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-51",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "Para el método de Secante, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Cambiar a un método analítico.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-52",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "Si durante la ejecución de Secante nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-53",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "En el contexto de la programación computacional de Secante, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-54",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "Para el método de Secante, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico.",
+      "Redondear siempre al entero más cercano."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-55",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "Si durante la ejecución de Secante nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-56",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "En el contexto de la programación computacional de Secante, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-57",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "Para el método de Secante, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-58",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "Si durante la ejecución de Secante nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-59",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "En el contexto de la programación computacional de Secante, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Secante-var-60",
+    "topic": "root-finding",
+    "method": "Secante",
+    "question": "Para el método de Secante, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Cambiar a un método analítico.",
+      "Detener el algoritmo inmediatamente.",
+      "Redondear siempre al entero más cercano."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-base-61",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "¿Cuál es el objetivo principal del método de Falsa Posición?",
+    "options": [
+      "Resolver sistemas lineales",
+      "Encontrar la raíz de una ecuación no lineal f(x) = 0.",
+      "Encontrar la derivada",
+      "Encontrar la integral"
+    ],
+    "correctAnswer": "Encontrar la raíz de una ecuación no lineal f(x) = 0.",
+    "explanationBase": "Concepto general de root-finding aplicado a Falsa Posición."
+  },
+  {
+    "id": "Falsa Posición-base-62",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "En el método de Falsa Posición, si el error de la iteración actual es E, ¿cuál es el criterio de parada más común?",
+    "options": [
+      "Cuando se alcanza 1 iteración",
+      "Cuando el error es cero exacto",
+      "Cuando el error absoluto es menor a una tolerancia predefinida.",
+      "Cuando el error aumenta"
+    ],
+    "correctAnswer": "Cuando el error absoluto es menor a una tolerancia predefinida.",
+    "explanationBase": "Concepto general de root-finding aplicado a Falsa Posición."
+  },
+  {
+    "id": "Falsa Posición-base-63",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "¿Qué pasa si la función no cruza el eje x en el método de Falsa Posición?",
+    "options": [
+      "El método no podrá encontrar una raíz real.",
+      "El método converge más rápido",
+      "El método encuentra una raíz compleja siempre",
+      "El resultado es infinito"
+    ],
+    "correctAnswer": "El método no podrá encontrar una raíz real.",
+    "explanationBase": "Concepto general de root-finding aplicado a Falsa Posición."
+  },
+  {
+    "id": "Falsa Posición-base-64",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "Si aplicamos Falsa Posición y el valor de f(x) se acerca a cero, esto indica que:",
+    "options": [
+      "La función no tiene solución",
+      "Hay un error de cálculo",
+      "El método está divergiendo",
+      "Nos estamos acercando a la raíz."
+    ],
+    "correctAnswer": "Nos estamos acercando a la raíz.",
+    "explanationBase": "Concepto general de root-finding aplicado a Falsa Posición."
+  },
+  {
+    "id": "Falsa Posición-req-65",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Falsa Posición?",
+    "options": [
+      "Requiere calcular integrales triples.",
+      "Solo funciona para números enteros negativos.",
+      "No tiene ningún requerimiento especial.",
+      "Requiere un intervalo [a,b] donde f(a)*f(b) < 0."
+    ],
+    "correctAnswer": "Requiere un intervalo [a,b] donde f(a)*f(b) < 0.",
+    "explanationBase": "Es un fundamento matemático clave para que Falsa Posición funcione."
+  },
+  {
+    "id": "Falsa Posición-form-66",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Falsa Posición?",
+    "options": [
+      "Ignorando los valores de la función y usando solo derivadas.",
+      "Sumando todos los valores de x y dividiendo por cero.",
+      "xr = b - f(b)(a-b)/(f(a)-f(b))",
+      "Multiplicando la función por una constante aleatoria."
+    ],
+    "correctAnswer": "xr = b - f(b)(a-b)/(f(a)-f(b))",
+    "explanationBase": "Esta es la base operativa del método numérico de Falsa Posición."
+  },
+  {
+    "id": "Falsa Posición-conv-67",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Falsa Posición?",
+    "options": [
+      "La convergencia es completamente impredecible.",
+      "Siempre diverge y nunca encuentra la solución.",
+      "El error aumenta en cada iteración exponencialmente.",
+      "Lineal, a menudo más rápida que bisección."
+    ],
+    "correctAnswer": "Lineal, a menudo más rápida que bisección.",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Falsa Posición."
+  },
+  {
+    "id": "Falsa Posición-ext-68",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "¿Qué propiedad adicional caracteriza al método de Falsa Posición?",
+    "options": [
+      "Es un método que no se usa en la práctica actual.",
+      "Usa interpolación lineal entre los extremos del intervalo para encontrar la raíz.",
+      "Solo se puede calcular a mano y no en computadora.",
+      "Fue descubierto en el año 2020."
+    ],
+    "correctAnswer": "Usa interpolación lineal entre los extremos del intervalo para encontrar la raíz.",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Falsa Posición-var-69",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "Si durante la ejecución de Falsa Posición nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-70",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "En el contexto de la programación computacional de Falsa Posición, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-71",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "Para el método de Falsa Posición, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Redondear siempre al entero más cercano.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-72",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "Si durante la ejecución de Falsa Posición nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-73",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "En el contexto de la programación computacional de Falsa Posición, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-74",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "Para el método de Falsa Posición, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-75",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "Si durante la ejecución de Falsa Posición nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-76",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "En el contexto de la programación computacional de Falsa Posición, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-77",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "Para el método de Falsa Posición, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Detener el algoritmo inmediatamente.",
+      "Redondear siempre al entero más cercano.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-78",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "Si durante la ejecución de Falsa Posición nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-79",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "En el contexto de la programación computacional de Falsa Posición, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Falsa Posición-var-80",
+    "topic": "root-finding",
+    "method": "Falsa Posición",
+    "question": "Para el método de Falsa Posición, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-base-81",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "¿Cuál es el objetivo principal del método de Punto Fijo?",
+    "options": [
+      "Resolver sistemas lineales",
+      "Encontrar la derivada",
+      "Encontrar la integral",
+      "Encontrar la raíz de una ecuación no lineal f(x) = 0."
+    ],
+    "correctAnswer": "Encontrar la raíz de una ecuación no lineal f(x) = 0.",
+    "explanationBase": "Concepto general de root-finding aplicado a Punto Fijo."
+  },
+  {
+    "id": "Punto Fijo-base-82",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "En el método de Punto Fijo, si el error de la iteración actual es E, ¿cuál es el criterio de parada más común?",
+    "options": [
+      "Cuando el error aumenta",
+      "Cuando el error absoluto es menor a una tolerancia predefinida.",
+      "Cuando el error es cero exacto",
+      "Cuando se alcanza 1 iteración"
+    ],
+    "correctAnswer": "Cuando el error absoluto es menor a una tolerancia predefinida.",
+    "explanationBase": "Concepto general de root-finding aplicado a Punto Fijo."
+  },
+  {
+    "id": "Punto Fijo-base-83",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "¿Qué pasa si la función no cruza el eje x en el método de Punto Fijo?",
+    "options": [
+      "El método converge más rápido",
+      "El resultado es infinito",
+      "El método no podrá encontrar una raíz real.",
+      "El método encuentra una raíz compleja siempre"
+    ],
+    "correctAnswer": "El método no podrá encontrar una raíz real.",
+    "explanationBase": "Concepto general de root-finding aplicado a Punto Fijo."
+  },
+  {
+    "id": "Punto Fijo-base-84",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "Si aplicamos Punto Fijo y el valor de f(x) se acerca a cero, esto indica que:",
+    "options": [
+      "El método está divergiendo",
+      "Nos estamos acercando a la raíz.",
+      "Hay un error de cálculo",
+      "La función no tiene solución"
+    ],
+    "correctAnswer": "Nos estamos acercando a la raíz.",
+    "explanationBase": "Concepto general de root-finding aplicado a Punto Fijo."
+  },
+  {
+    "id": "Punto Fijo-req-85",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Punto Fijo?",
+    "options": [
+      "Requiere calcular integrales triples.",
+      "No tiene ningún requerimiento especial.",
+      "Solo funciona para números enteros negativos.",
+      "Requiere reescribir la función como x = g(x)."
+    ],
+    "correctAnswer": "Requiere reescribir la función como x = g(x).",
+    "explanationBase": "Es un fundamento matemático clave para que Punto Fijo funcione."
+  },
+  {
+    "id": "Punto Fijo-form-86",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Punto Fijo?",
+    "options": [
+      "Ignorando los valores de la función y usando solo derivadas.",
+      "Multiplicando la función por una constante aleatoria.",
+      "Sumando todos los valores de x y dividiendo por cero.",
+      "x_i+1 = g(x_i)"
+    ],
+    "correctAnswer": "x_i+1 = g(x_i)",
+    "explanationBase": "Esta es la base operativa del método numérico de Punto Fijo."
+  },
+  {
+    "id": "Punto Fijo-conv-87",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Punto Fijo?",
+    "options": [
+      "Siempre diverge y nunca encuentra la solución.",
+      "El error aumenta en cada iteración exponencialmente.",
+      "La convergencia es completamente impredecible.",
+      "Lineal, depende de que |g'(x)| < 1."
+    ],
+    "correctAnswer": "Lineal, depende de que |g'(x)| < 1.",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Punto Fijo."
+  },
+  {
+    "id": "Punto Fijo-ext-88",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "¿Qué propiedad adicional caracteriza al método de Punto Fijo?",
+    "options": [
+      "Puede divergir si la derivada de g(x) es mayor a 1.",
+      "Solo se puede calcular a mano y no en computadora.",
+      "Es un método que no se usa en la práctica actual.",
+      "Fue descubierto en el año 2020."
+    ],
+    "correctAnswer": "Puede divergir si la derivada de g(x) es mayor a 1.",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Punto Fijo-var-89",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "Si durante la ejecución de Punto Fijo nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-90",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "En el contexto de la programación computacional de Punto Fijo, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-91",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "Para el método de Punto Fijo, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-92",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "Si durante la ejecución de Punto Fijo nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-93",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "En el contexto de la programación computacional de Punto Fijo, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-94",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "Para el método de Punto Fijo, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente.",
+      "Redondear siempre al entero más cercano.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-95",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "Si durante la ejecución de Punto Fijo nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-96",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "En el contexto de la programación computacional de Punto Fijo, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-97",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "Para el método de Punto Fijo, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Redondear siempre al entero más cercano.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-98",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "Si durante la ejecución de Punto Fijo nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-99",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "En el contexto de la programación computacional de Punto Fijo, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Punto Fijo-var-100",
+    "topic": "root-finding",
+    "method": "Punto Fijo",
+    "question": "Para el método de Punto Fijo, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Detener el algoritmo inmediatamente.",
+      "Redondear siempre al entero más cercano.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-base-101",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "¿Qué busca aproximar el método de Regla del Trapecio?",
+    "options": [
+      "La raíz de la ecuación",
+      "El punto máximo de la función",
+      "La pendiente de la curva",
+      "El área bajo la curva de una función en un intervalo."
+    ],
+    "correctAnswer": "El área bajo la curva de una función en un intervalo.",
+    "explanationBase": "Concepto general de integration aplicado a Regla del Trapecio."
+  },
+  {
+    "id": "Regla del Trapecio-base-102",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Al aumentar el número de subintervalos en Regla del Trapecio, por lo general:",
+    "options": [
+      "El área aumenta infinitamente",
+      "El cálculo se vuelve instantáneo",
+      "El error de redondeo desaparece",
+      "El error de truncamiento disminuye."
+    ],
+    "correctAnswer": "El error de truncamiento disminuye.",
+    "explanationBase": "Concepto general de integration aplicado a Regla del Trapecio."
+  },
+  {
+    "id": "Regla del Trapecio-base-103",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "¿Cuál es una limitación geométrica al aplicar Regla del Trapecio?",
+    "options": [
+      "La precisión depende de la forma de la curva y el tamaño del paso.",
+      "Solo funciona para líneas rectas",
+      "No se puede usar con funciones positivas",
+      "Requiere conocer la integral exacta primero"
+    ],
+    "correctAnswer": "La precisión depende de la forma de la curva y el tamaño del paso.",
+    "explanationBase": "Concepto general de integration aplicado a Regla del Trapecio."
+  },
+  {
+    "id": "Regla del Trapecio-req-104",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Regla del Trapecio?",
+    "options": [
+      "Aproxima el área usando trapecios (polinomios de grado 1).",
+      "No tiene ningún requerimiento especial.",
+      "Solo funciona para números enteros negativos.",
+      "Requiere calcular integrales triples."
+    ],
+    "correctAnswer": "Aproxima el área usando trapecios (polinomios de grado 1).",
+    "explanationBase": "Es un fundamento matemático clave para que Regla del Trapecio funcione."
+  },
+  {
+    "id": "Regla del Trapecio-form-105",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Regla del Trapecio?",
+    "options": [
+      "Sumando todos los valores de x y dividiendo por cero.",
+      "I = (h/2) * (f(a) + f(b)) para un solo segmento.",
+      "Ignorando los valores de la función y usando solo derivadas.",
+      "Multiplicando la función por una constante aleatoria."
+    ],
+    "correctAnswer": "I = (h/2) * (f(a) + f(b)) para un solo segmento.",
+    "explanationBase": "Esta es la base operativa del método numérico de Regla del Trapecio."
+  },
+  {
+    "id": "Regla del Trapecio-conv-106",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Regla del Trapecio?",
+    "options": [
+      "El error global es proporcional a h^2.",
+      "Siempre diverge y nunca encuentra la solución.",
+      "La convergencia es completamente impredecible.",
+      "El error aumenta en cada iteración exponencialmente."
+    ],
+    "correctAnswer": "El error global es proporcional a h^2.",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Regla del Trapecio."
+  },
+  {
+    "id": "Regla del Trapecio-ext-107",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "¿Qué propiedad adicional caracteriza al método de Regla del Trapecio?",
+    "options": [
+      "Es un método que no se usa en la práctica actual.",
+      "Es la fórmula de Newton-Cotes más simple.",
+      "Fue descubierto en el año 2020.",
+      "Solo se puede calcular a mano y no en computadora."
+    ],
+    "correctAnswer": "Es la fórmula de Newton-Cotes más simple.",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Regla del Trapecio-var-108",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Si durante la ejecución de Regla del Trapecio nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-109",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "En el contexto de la programación computacional de Regla del Trapecio, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-110",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Para el método de Regla del Trapecio, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-111",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Si durante la ejecución de Regla del Trapecio nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-112",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "En el contexto de la programación computacional de Regla del Trapecio, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-113",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Para el método de Regla del Trapecio, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-114",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Si durante la ejecución de Regla del Trapecio nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-115",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "En el contexto de la programación computacional de Regla del Trapecio, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-116",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Para el método de Regla del Trapecio, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Cambiar a un método analítico.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-117",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Si durante la ejecución de Regla del Trapecio nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-118",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "En el contexto de la programación computacional de Regla del Trapecio, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para hacer que el programa corra más lento.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-119",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Para el método de Regla del Trapecio, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Regla del Trapecio-var-120",
+    "topic": "integration",
+    "method": "Regla del Trapecio",
+    "question": "Si durante la ejecución de Regla del Trapecio nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-base-121",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "¿Qué busca aproximar el método de Simpson 1/3?",
+    "options": [
+      "El punto máximo de la función",
+      "La raíz de la ecuación",
+      "La pendiente de la curva",
+      "El área bajo la curva de una función en un intervalo."
+    ],
+    "correctAnswer": "El área bajo la curva de una función en un intervalo.",
+    "explanationBase": "Concepto general de integration aplicado a Simpson 1/3."
+  },
+  {
+    "id": "Simpson 1/3-base-122",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Al aumentar el número de subintervalos en Simpson 1/3, por lo general:",
+    "options": [
+      "El cálculo se vuelve instantáneo",
+      "El área aumenta infinitamente",
+      "El error de truncamiento disminuye.",
+      "El error de redondeo desaparece"
+    ],
+    "correctAnswer": "El error de truncamiento disminuye.",
+    "explanationBase": "Concepto general de integration aplicado a Simpson 1/3."
+  },
+  {
+    "id": "Simpson 1/3-base-123",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "¿Cuál es una limitación geométrica al aplicar Simpson 1/3?",
+    "options": [
+      "Solo funciona para líneas rectas",
+      "No se puede usar con funciones positivas",
+      "La precisión depende de la forma de la curva y el tamaño del paso.",
+      "Requiere conocer la integral exacta primero"
+    ],
+    "correctAnswer": "La precisión depende de la forma de la curva y el tamaño del paso.",
+    "explanationBase": "Concepto general de integration aplicado a Simpson 1/3."
+  },
+  {
+    "id": "Simpson 1/3-req-124",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Simpson 1/3?",
+    "options": [
+      "Requiere calcular integrales triples.",
+      "No tiene ningún requerimiento especial.",
+      "Solo funciona para números enteros negativos.",
+      "Requiere un número par de subintervalos (n par)."
+    ],
+    "correctAnswer": "Requiere un número par de subintervalos (n par).",
+    "explanationBase": "Es un fundamento matemático clave para que Simpson 1/3 funcione."
+  },
+  {
+    "id": "Simpson 1/3-form-125",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Simpson 1/3?",
+    "options": [
+      "Sumando todos los valores de x y dividiendo por cero.",
+      "Ignorando los valores de la función y usando solo derivadas.",
+      "Multiplicando la función por una constante aleatoria.",
+      "Aproxima la curva con parábolas (polinomios de grado 2)."
+    ],
+    "correctAnswer": "Aproxima la curva con parábolas (polinomios de grado 2).",
+    "explanationBase": "Esta es la base operativa del método numérico de Simpson 1/3."
+  },
+  {
+    "id": "Simpson 1/3-conv-126",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Simpson 1/3?",
+    "options": [
+      "El error global es proporcional a h^4.",
+      "Siempre diverge y nunca encuentra la solución.",
+      "La convergencia es completamente impredecible.",
+      "El error aumenta en cada iteración exponencialmente."
+    ],
+    "correctAnswer": "El error global es proporcional a h^4.",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Simpson 1/3."
+  },
+  {
+    "id": "Simpson 1/3-ext-127",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "¿Qué propiedad adicional caracteriza al método de Simpson 1/3?",
+    "options": [
+      "Es un método que no se usa en la práctica actual.",
+      "Solo se puede calcular a mano y no en computadora.",
+      "Usa los coeficientes 1, 4, 2, 4, ..., 1.",
+      "Fue descubierto en el año 2020."
+    ],
+    "correctAnswer": "Usa los coeficientes 1, 4, 2, 4, ..., 1.",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Simpson 1/3-var-128",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Si durante la ejecución de Simpson 1/3 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-129",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "En el contexto de la programación computacional de Simpson 1/3, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-130",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Para el método de Simpson 1/3, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-131",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Si durante la ejecución de Simpson 1/3 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-132",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "En el contexto de la programación computacional de Simpson 1/3, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-133",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Para el método de Simpson 1/3, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Detener el algoritmo inmediatamente.",
+      "Redondear siempre al entero más cercano.",
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-134",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Si durante la ejecución de Simpson 1/3 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-135",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "En el contexto de la programación computacional de Simpson 1/3, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-136",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Para el método de Simpson 1/3, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico.",
+      "Redondear siempre al entero más cercano."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-137",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Si durante la ejecución de Simpson 1/3 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-138",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "En el contexto de la programación computacional de Simpson 1/3, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-139",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Para el método de Simpson 1/3, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Redondear siempre al entero más cercano.",
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 1/3-var-140",
+    "topic": "integration",
+    "method": "Simpson 1/3",
+    "question": "Si durante la ejecución de Simpson 1/3 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-base-141",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "¿Qué busca aproximar el método de Simpson 3/8?",
+    "options": [
+      "La raíz de la ecuación",
+      "La pendiente de la curva",
+      "El punto máximo de la función",
+      "El área bajo la curva de una función en un intervalo."
+    ],
+    "correctAnswer": "El área bajo la curva de una función en un intervalo.",
+    "explanationBase": "Concepto general de integration aplicado a Simpson 3/8."
+  },
+  {
+    "id": "Simpson 3/8-base-142",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Al aumentar el número de subintervalos en Simpson 3/8, por lo general:",
+    "options": [
+      "El error de redondeo desaparece",
+      "El área aumenta infinitamente",
+      "El cálculo se vuelve instantáneo",
+      "El error de truncamiento disminuye."
+    ],
+    "correctAnswer": "El error de truncamiento disminuye.",
+    "explanationBase": "Concepto general de integration aplicado a Simpson 3/8."
+  },
+  {
+    "id": "Simpson 3/8-base-143",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "¿Cuál es una limitación geométrica al aplicar Simpson 3/8?",
+    "options": [
+      "La precisión depende de la forma de la curva y el tamaño del paso.",
+      "Solo funciona para líneas rectas",
+      "Requiere conocer la integral exacta primero",
+      "No se puede usar con funciones positivas"
+    ],
+    "correctAnswer": "La precisión depende de la forma de la curva y el tamaño del paso.",
+    "explanationBase": "Concepto general de integration aplicado a Simpson 3/8."
+  },
+  {
+    "id": "Simpson 3/8-req-144",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Simpson 3/8?",
+    "options": [
+      "Requiere que el número de subintervalos sea múltiplo de 3.",
+      "No tiene ningún requerimiento especial.",
+      "Solo funciona para números enteros negativos.",
+      "Requiere calcular integrales triples."
+    ],
+    "correctAnswer": "Requiere que el número de subintervalos sea múltiplo de 3.",
+    "explanationBase": "Es un fundamento matemático clave para que Simpson 3/8 funcione."
+  },
+  {
+    "id": "Simpson 3/8-form-145",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Simpson 3/8?",
+    "options": [
+      "Ignorando los valores de la función y usando solo derivadas.",
+      "Multiplicando la función por una constante aleatoria.",
+      "Aproxima la curva con polinomios cúbicos (grado 3).",
+      "Sumando todos los valores de x y dividiendo por cero."
+    ],
+    "correctAnswer": "Aproxima la curva con polinomios cúbicos (grado 3).",
+    "explanationBase": "Esta es la base operativa del método numérico de Simpson 3/8."
+  },
+  {
+    "id": "Simpson 3/8-conv-146",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Simpson 3/8?",
+    "options": [
+      "Siempre diverge y nunca encuentra la solución.",
+      "El error aumenta en cada iteración exponencialmente.",
+      "El error global es proporcional a h^4, similar a 1/3.",
+      "La convergencia es completamente impredecible."
+    ],
+    "correctAnswer": "El error global es proporcional a h^4, similar a 1/3.",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Simpson 3/8."
+  },
+  {
+    "id": "Simpson 3/8-ext-147",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "¿Qué propiedad adicional caracteriza al método de Simpson 3/8?",
+    "options": [
+      "Usa los coeficientes 1, 3, 3, 2, 3, 3, 2, ..., 1.",
+      "Es un método que no se usa en la práctica actual.",
+      "Solo se puede calcular a mano y no en computadora.",
+      "Fue descubierto en el año 2020."
+    ],
+    "correctAnswer": "Usa los coeficientes 1, 3, 3, 2, 3, 3, 2, ..., 1.",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Simpson 3/8-var-148",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Si durante la ejecución de Simpson 3/8 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "La convergencia se vuelve instantánea.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-149",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "En el contexto de la programación computacional de Simpson 3/8, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-150",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Para el método de Simpson 3/8, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-151",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Si durante la ejecución de Simpson 3/8 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-152",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "En el contexto de la programación computacional de Simpson 3/8, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-153",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Para el método de Simpson 3/8, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente.",
+      "Redondear siempre al entero más cercano."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-154",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Si durante la ejecución de Simpson 3/8 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-155",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "En el contexto de la programación computacional de Simpson 3/8, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-156",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Para el método de Simpson 3/8, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-157",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Si durante la ejecución de Simpson 3/8 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-158",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "En el contexto de la programación computacional de Simpson 3/8, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-159",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Para el método de Simpson 3/8, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Redondear siempre al entero más cercano.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Simpson 3/8-var-160",
+    "topic": "integration",
+    "method": "Simpson 3/8",
+    "question": "Si durante la ejecución de Simpson 3/8 nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-base-161",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "El propósito de usar Interpolación Lineal es:",
+    "options": [
+      "Aproximar puntos mediante mínimos cuadrados",
+      "Encontrar una función polinómica que pase exactamente por un conjunto de puntos dados.",
+      "Calcular las raíces del polinomio",
+      "Encontrar el área entre los puntos"
+    ],
+    "correctAnswer": "Encontrar una función polinómica que pase exactamente por un conjunto de puntos dados.",
+    "explanationBase": "Concepto general de interpolation aplicado a Interpolación Lineal."
+  },
+  {
+    "id": "Interpolación Lineal-base-162",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Si tenemos N puntos de datos, Interpolación Lineal generará un polinomio de grado máximo:",
+    "options": [
+      "N",
+      "N - 1",
+      "N + 1",
+      "2N"
+    ],
+    "correctAnswer": "N - 1",
+    "explanationBase": "Concepto general de interpolation aplicado a Interpolación Lineal."
+  },
+  {
+    "id": "Interpolación Lineal-base-163",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Una desventaja de usar polinomios de alto grado en Interpolación Lineal es:",
+    "options": [
+      "Que el cálculo es imposible de realizar",
+      "Que el polinomio ya no pasa por los puntos",
+      "Que la curva se vuelve una línea recta",
+      "El fenómeno de Runge (oscilaciones en los extremos)."
+    ],
+    "correctAnswer": "El fenómeno de Runge (oscilaciones en los extremos).",
+    "explanationBase": "Concepto general de interpolation aplicado a Interpolación Lineal."
+  },
+  {
+    "id": "Interpolación Lineal-req-164",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Interpolación Lineal?",
+    "options": [
+      "Requiere calcular integrales triples.",
+      "Solo funciona para números enteros negativos.",
+      "No tiene ningún requerimiento especial.",
+      "Solo necesita dos puntos."
+    ],
+    "correctAnswer": "Solo necesita dos puntos.",
+    "explanationBase": "Es un fundamento matemático clave para que Interpolación Lineal funcione."
+  },
+  {
+    "id": "Interpolación Lineal-form-165",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Interpolación Lineal?",
+    "options": [
+      "Conecta dos puntos con una línea recta.",
+      "Ignorando los valores de la función y usando solo derivadas.",
+      "Sumando todos los valores de x y dividiendo por cero.",
+      "Multiplicando la función por una constante aleatoria."
+    ],
+    "correctAnswer": "Conecta dos puntos con una línea recta.",
+    "explanationBase": "Esta es la base operativa del método numérico de Interpolación Lineal."
+  },
+  {
+    "id": "Interpolación Lineal-conv-166",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Interpolación Lineal?",
+    "options": [
+      "La convergencia es completamente impredecible.",
+      "Siempre diverge y nunca encuentra la solución.",
+      "El error aumenta en cada iteración exponencialmente.",
+      "Es exacta solo para funciones lineales."
+    ],
+    "correctAnswer": "Es exacta solo para funciones lineales.",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Interpolación Lineal."
+  },
+  {
+    "id": "Interpolación Lineal-ext-167",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "¿Qué propiedad adicional caracteriza al método de Interpolación Lineal?",
+    "options": [
+      "Es un método que no se usa en la práctica actual.",
+      "Es el caso más básico de interpolación polinómica.",
+      "Solo se puede calcular a mano y no en computadora.",
+      "Fue descubierto en el año 2020."
+    ],
+    "correctAnswer": "Es el caso más básico de interpolación polinómica.",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Interpolación Lineal-var-168",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Si durante la ejecución de Interpolación Lineal nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-169",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "En el contexto de la programación computacional de Interpolación Lineal, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-170",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Para el método de Interpolación Lineal, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-171",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Si durante la ejecución de Interpolación Lineal nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-172",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "En el contexto de la programación computacional de Interpolación Lineal, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-173",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Para el método de Interpolación Lineal, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Cambiar a un método analítico.",
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-174",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Si durante la ejecución de Interpolación Lineal nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-175",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "En el contexto de la programación computacional de Interpolación Lineal, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-176",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Para el método de Interpolación Lineal, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Detener el algoritmo inmediatamente.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Cambiar a un método analítico.",
+      "Redondear siempre al entero más cercano."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-177",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Si durante la ejecución de Interpolación Lineal nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-178",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "En el contexto de la programación computacional de Interpolación Lineal, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-179",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Para el método de Interpolación Lineal, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Redondear siempre al entero más cercano.",
+      "Detener el algoritmo inmediatamente.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Interpolación Lineal-var-180",
+    "topic": "interpolation",
+    "method": "Interpolación Lineal",
+    "question": "Si durante la ejecución de Interpolación Lineal nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-base-181",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "El propósito de usar Lagrange es:",
+    "options": [
+      "Encontrar el área entre los puntos",
+      "Encontrar una función polinómica que pase exactamente por un conjunto de puntos dados.",
+      "Calcular las raíces del polinomio",
+      "Aproximar puntos mediante mínimos cuadrados"
+    ],
+    "correctAnswer": "Encontrar una función polinómica que pase exactamente por un conjunto de puntos dados.",
+    "explanationBase": "Concepto general de interpolation aplicado a Lagrange."
+  },
+  {
+    "id": "Lagrange-base-182",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Si tenemos N puntos de datos, Lagrange generará un polinomio de grado máximo:",
+    "options": [
+      "N",
+      "2N",
+      "N - 1",
+      "N + 1"
+    ],
+    "correctAnswer": "N - 1",
+    "explanationBase": "Concepto general de interpolation aplicado a Lagrange."
+  },
+  {
+    "id": "Lagrange-base-183",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Una desventaja de usar polinomios de alto grado en Lagrange es:",
+    "options": [
+      "Que la curva se vuelve una línea recta",
+      "El fenómeno de Runge (oscilaciones en los extremos).",
+      "Que el polinomio ya no pasa por los puntos",
+      "Que el cálculo es imposible de realizar"
+    ],
+    "correctAnswer": "El fenómeno de Runge (oscilaciones en los extremos).",
+    "explanationBase": "Concepto general de interpolation aplicado a Lagrange."
+  },
+  {
+    "id": "Lagrange-req-184",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "¿Cuál es un requerimiento o característica principal del método de Lagrange?",
+    "options": [
+      "Usa polinomios base L_i(x).",
+      "Requiere calcular integrales triples.",
+      "No tiene ningún requerimiento especial.",
+      "Solo funciona para números enteros negativos."
+    ],
+    "correctAnswer": "Usa polinomios base L_i(x).",
+    "explanationBase": "Es un fundamento matemático clave para que Lagrange funcione."
+  },
+  {
+    "id": "Lagrange-form-185",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "¿Cómo se define conceptualmente la iteración o cálculo en Lagrange?",
+    "options": [
+      "Ignorando los valores de la función y usando solo derivadas.",
+      "Multiplicando la función por una constante aleatoria.",
+      "Sumando todos los valores de x y dividiendo por cero.",
+      "P(x) = suma( y_i * L_i(x) )"
+    ],
+    "correctAnswer": "P(x) = suma( y_i * L_i(x) )",
+    "explanationBase": "Esta es la base operativa del método numérico de Lagrange."
+  },
+  {
+    "id": "Lagrange-conv-186",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "¿Cómo es la convergencia o el comportamiento del error en Lagrange?",
+    "options": [
+      "El error aumenta en cada iteración exponencialmente.",
+      "El grado máximo es n-1 para n puntos.",
+      "Siempre diverge y nunca encuentra la solución.",
+      "La convergencia es completamente impredecible."
+    ],
+    "correctAnswer": "El grado máximo es n-1 para n puntos.",
+    "explanationBase": "La velocidad y seguridad de convergencia son propiedades vitales de Lagrange."
+  },
+  {
+    "id": "Lagrange-ext-187",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "¿Qué propiedad adicional caracteriza al método de Lagrange?",
+    "options": [
+      "Fue descubierto en el año 2020.",
+      "Es un método que no se usa en la práctica actual.",
+      "Solo se puede calcular a mano y no en computadora.",
+      "Evita resolver un sistema de ecuaciones lineales."
+    ],
+    "correctAnswer": "Evita resolver un sistema de ecuaciones lineales.",
+    "explanationBase": "Un dato teórico importante asociado al método."
+  },
+  {
+    "id": "Lagrange-var-188",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Si durante la ejecución de Lagrange nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "La convergencia se vuelve instantánea.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-189",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "En el contexto de la programación computacional de Lagrange, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-190",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Para el método de Lagrange, en la iteración número 8, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Redondear siempre al entero más cercano.",
+      "Cambiar a un método analítico.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-191",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Si durante la ejecución de Lagrange nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-192",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "En el contexto de la programación computacional de Lagrange, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-193",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Para el método de Lagrange, en la iteración número 11, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente.",
+      "Redondear siempre al entero más cercano.",
+      "Cambiar a un método analítico."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-194",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Si durante la ejecución de Lagrange nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "La convergencia se vuelve instantánea.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El error de truncamiento se hace cero automáticamente."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-195",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "En el contexto de la programación computacional de Lagrange, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-196",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Para el método de Lagrange, en la iteración número 14, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Redondear siempre al entero más cercano.",
+      "Cambiar a un método analítico.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-197",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Si durante la ejecución de Lagrange nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-198",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "En el contexto de la programación computacional de Lagrange, ¿por qué es importante definir un número máximo de iteraciones?",
+    "options": [
+      "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+      "Porque la memoria de la computadora se llena en 10 iteraciones.",
+      "Porque las matemáticas impiden hacer más de 100 iteraciones.",
+      "Para hacer que el programa corra más lento."
+    ],
+    "correctAnswer": "Para evitar bucles infinitos en caso de que el método diverja o oscile.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-199",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Para el método de Lagrange, en la iteración número 17, ¿qué debemos garantizar para no acumular error de redondeo excesivo?",
+    "options": [
+      "Redondear siempre al entero más cercano.",
+      "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+      "Cambiar a un método analítico.",
+      "Detener el algoritmo inmediatamente."
+    ],
+    "correctAnswer": "Usar suficientes cifras significativas y evitar restas de números muy cercanos.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  },
+  {
+    "id": "Lagrange-var-200",
+    "topic": "interpolation",
+    "method": "Lagrange",
+    "question": "Si durante la ejecución de Lagrange nos topamos con una discontinuidad en la función, ¿qué es probable que ocurra?",
+    "options": [
+      "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+      "El error de truncamiento se hace cero automáticamente.",
+      "El método ignorará la discontinuidad y dará el resultado exacto.",
+      "La convergencia se vuelve instantánea."
+    ],
+    "correctAnswer": "El método puede fallar o arrojar resultados erróneos si asume continuidad.",
+    "explanationBase": "Concepto importante en la implementación computacional de métodos numéricos."
+  }
+]

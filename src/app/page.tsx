@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import MethodCard from '@/presentation/components/common/MethodCard';
 import SearchBar from '@/presentation/components/common/SearchBar';
 import { METHODS, CATEGORIES } from '@/lib/methods-data';
@@ -29,6 +30,14 @@ export default function HomePage() {
 
         {/* Search */}
         <SearchBar onSearch={setSearchQuery} placeholder="Buscar método (ej: bisección, simpson, lagrange...)" />
+
+        {/* Test Banner */}
+        <div className="mt-8">
+          <Link href="/test" className="inline-flex items-center gap-3 px-6 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white font-semibold shadow-lg transition-all hover:-translate-y-1">
+            <span className="text-xl">🧠</span>
+            <span>¡Pon a prueba tus conocimientos con IA!</span>
+          </Link>
+        </div>
       </div>
 
       {/* Stats Bar */}

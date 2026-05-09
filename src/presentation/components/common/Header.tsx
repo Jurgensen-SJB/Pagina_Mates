@@ -34,6 +34,7 @@ export default function Header() {
             <NavLink href="/root-finding" label="Raíces" />
             <NavLink href="/integration" label="Integración" />
             <NavLink href="/interpolation" label="Interpolación" />
+            <NavLink href="/test" label="Tests con IA" />
           </nav>
 
           {/* Mobile Menu Button */}
@@ -64,6 +65,7 @@ export default function Header() {
             <MobileNavLink href="/root-finding" label="🔍 Raíces de Ecuaciones" onClick={() => setMobileMenuOpen(false)} />
             <MobileNavLink href="/integration" label="∫ Integración Numérica" onClick={() => setMobileMenuOpen(false)} />
             <MobileNavLink href="/interpolation" label="📊 Interpolación" onClick={() => setMobileMenuOpen(false)} />
+            <MobileNavLink href="/test" label="🧠 Tests con IA" onClick={() => setMobileMenuOpen(false)} />
           </nav>
         </div>
       )}
