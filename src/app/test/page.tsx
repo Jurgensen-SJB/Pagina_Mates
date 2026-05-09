@@ -7,13 +7,13 @@ export const metadata = {
 
 export default function TestPage() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl">
-            Test de Conocimientos
+        <div className="text-center mb-12 animate-fadeInUp">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+            <span className="gradient-text">Test de Conocimientos</span>
           </h1>
-          <p className="mt-4 text-xl text-gray-600 dark:text-gray-300">
+          <p className="mt-4 text-xl" style={{ color: 'var(--text-secondary)' }}>
             Evalúa tu comprensión de los métodos numéricos. Si te equivocas, nuestro Agente de IA te ayudará a entender por qué.
           </p>
         </div>

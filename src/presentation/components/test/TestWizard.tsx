@@ -85,15 +85,16 @@ export function TestWizard() {
 
   if (!selectedMethod) {
     return (
-      <div className="max-w-2xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
-        <h2 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">Selecciona una temática para el Test</h2>
-        <p className="text-gray-600 dark:text-gray-300 mb-6 text-center">
+      <div className="max-w-2xl mx-auto p-8 glass-card animate-fadeInUp">
+        <h2 className="text-2xl font-bold mb-6 text-center" style={{ color: 'var(--text-primary)' }}>Selecciona una temática para el Test</h2>
+        <p className="mb-8 text-center" style={{ color: 'var(--text-secondary)' }}>
           Cada test consta de hasta 8 preguntas. Si te equivocas, un Agente de Inteligencia Artificial analizará tu respuesta y te explicará el concepto.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <button
             onClick={() => startTest("Todos")}
-            className="p-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors shadow-sm"
+            className="p-4 rounded-xl font-bold transition-transform hover:scale-105"
+            style={{ background: 'var(--gradient-primary)', color: '#fff', border: '1px solid var(--border)' }}
           >
             Todos los Métodos
           </button>
@@ -101,7 +102,8 @@ export function TestWizard() {
             <button
               key={method}
               onClick={() => startTest(method)}
-              className="p-4 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 text-gray-800 dark:text-white rounded-lg font-medium border border-gray-200 dark:border-gray-600 transition-colors shadow-sm"
+              className="p-4 glass-card hover:bg-[var(--surface-hover)] font-medium transition-colors"
+              style={{ color: 'var(--text-primary)' }}
             >
               {method}
             </button>
@@ -113,14 +115,15 @@ export function TestWizard() {
 
   if (showResult) {
     return (
-      <div className="max-w-2xl mx-auto p-8 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 text-center">
-        <h2 className="text-3xl font-bold mb-4 text-gray-800 dark:text-white">¡Test Finalizado!</h2>
-        <p className="text-xl mb-8 text-gray-600 dark:text-gray-300">
-          Tu puntuación: <span className="font-bold text-indigo-600 dark:text-indigo-400">{score}</span> de {questions.length}
+      <div className="max-w-2xl mx-auto p-8 glass-card animate-fadeInUp text-center">
+        <h2 className="text-3xl font-bold mb-4" style={{ color: 'var(--text-primary)' }}>¡Test Finalizado!</h2>
+        <p className="text-xl mb-8" style={{ color: 'var(--text-secondary)' }}>
+          Tu puntuación: <span className="font-bold text-2xl" style={{ color: 'var(--primary-light)' }}>{score}</span> de {questions.length}
         </p>
         <button
           onClick={() => setSelectedMethod(null)}
-          className="px-6 py-3 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg font-medium transition-colors shadow-md"
+          className="px-6 py-3 rounded-full font-bold transition-transform hover:scale-105"
+          style={{ background: 'var(--gradient-primary)', color: '#fff' }}
         >
           Volver a Empezar
         </button>
@@ -139,17 +142,17 @@ export function TestWizard() {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className="max-w-3xl mx-auto p-6 bg-white dark:bg-gray-800 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700">
-      <div className="flex justify-between items-center mb-6">
-        <span className="text-sm font-semibold px-3 py-1 bg-indigo-100 text-indigo-800 dark:bg-indigo-900/50 dark:text-indigo-300 rounded-full">
+    <div className="max-w-3xl mx-auto p-8 glass-card animate-fadeInUp">
+      <div className="flex justify-between items-center mb-6 border-b pb-4" style={{ borderColor: 'var(--border)' }}>
+        <span className="text-sm font-semibold px-3 py-1 rounded-full" style={{ background: 'var(--surface-hover)', color: 'var(--primary-light)' }}>
           {currentQuestion.method}
         </span>
-        <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+        <span className="text-sm font-medium" style={{ color: 'var(--text-muted)' }}>
           Pregunta {currentQuestionIndex + 1} de {questions.length}
         </span>
       </div>
 
-      <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-6">
+      <h3 className="text-xl font-bold mb-6" style={{ color: 'var(--text-primary)' }}>
         {currentQuestion.question}
       </h3>
 
@@ -159,11 +162,12 @@ export function TestWizard() {
             key={idx}
             disabled={!!feedback || isLoadingFeedback}
             onClick={() => setSelectedAnswer(option)}
-            className={`w-full text-left p-4 rounded-lg border transition-all ${
+            className={`w-full text-left p-4 rounded-xl border transition-all ${
               selectedAnswer === option
-                ? "border-indigo-600 bg-indigo-50 dark:bg-indigo-900/20 text-indigo-700 dark:text-indigo-300"
-                : "border-gray-200 dark:border-gray-600 hover:border-indigo-300 dark:hover:border-indigo-500 text-gray-700 dark:text-gray-200"
+                ? "border-[var(--primary)] bg-[var(--surface-hover)]"
+                : "border-[var(--border)] hover:border-[var(--primary-light)]"
             } ${(feedback || isLoadingFeedback) ? "opacity-50 cursor-not-allowed" : ""}`}
+            style={{ color: 'var(--text-secondary)' }}
           >
             {option}
           </button>
@@ -174,11 +178,12 @@ export function TestWizard() {
         <button
           disabled={!selectedAnswer}
           onClick={handleNextQuestion}
-          className={`w-full py-3 rounded-lg font-medium transition-colors ${
+          className={`w-full py-3 rounded-xl font-bold transition-transform ${
             selectedAnswer
-              ? "bg-indigo-600 hover:bg-indigo-700 text-white shadow-md"
-              : "bg-gray-200 dark:bg-gray-700 text-gray-400 dark:text-gray-500 cursor-not-allowed"
+              ? "hover:scale-[1.02]"
+              : "opacity-50 cursor-not-allowed"
           }`}
+          style={{ background: selectedAnswer ? 'var(--gradient-primary)' : 'var(--surface-hover)', color: selectedAnswer ? '#fff' : 'var(--text-muted)' }}
         >
           Confirmar Respuesta
         </button>
@@ -193,16 +198,17 @@ export function TestWizard() {
       )}
 
       {feedback && (
-        <div className="p-6 bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-800/50 rounded-lg">
-          <h4 className="text-lg font-bold text-red-700 dark:text-red-400 mb-3 flex items-center gap-2">
+        <div className="mt-8 p-6 rounded-xl border" style={{ borderColor: 'var(--danger)', background: 'rgba(239, 68, 68, 0.1)' }}>
+          <h4 className="text-lg font-bold mb-4 flex items-center gap-2" style={{ color: 'var(--danger)' }}>
             ⚠️ Respuesta Incorrecta
           </h4>
-          <div className="text-gray-800 dark:text-gray-200 prose prose-sm dark:prose-invert mb-6">
+          <div className="prose prose-sm dark:prose-invert max-w-none mb-6" style={{ color: 'var(--text-secondary)' }}>
             <ReactMarkdown>{feedback}</ReactMarkdown>
           </div>
           <button
             onClick={moveToNext}
-            className="w-full py-3 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white rounded-lg font-medium transition-colors"
+            className="w-full py-3 rounded-xl font-bold transition-colors"
+            style={{ background: 'var(--surface-hover)', color: 'var(--text-primary)', border: '1px solid var(--border)' }}
           >
             Continuar a la siguiente pregunta
           </button>
