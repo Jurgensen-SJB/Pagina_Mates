@@ -64,7 +64,7 @@ export class FixedPointUseCase {
         status: 'continuing'
       };
 
-      if (ea !== null && ea < tolerance) {
+      if (Math.abs(xNew - xOld) < tolerance || (ea !== null && ea < tolerance)) {
         step.status = 'converged';
         steps.push(step);
         return {
