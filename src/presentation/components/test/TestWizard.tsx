@@ -64,9 +64,29 @@ export function TestWizard() {
           }),
         });
         const data = await response.json();
-        setFeedback(data.feedback || data.error);
+        
+        if (response.ok && data.feedback && !data.feedback.startsWith("Error:")) {
+          setFeedback(data.feedback);
+        } else {
+          const errorMsg = data.feedback || data.error || "Error desconocido";
+          setFeedback(
+            `### ⚠️ Servicio de IA no disponible\n` +
+            `No se pudo generar una explicación de IA personalizada (${errorMsg}).\n\n` +
+            `### ✅ Respuesta Correcta\n` +
+            `**${currentQuestion.correctAnswer}**\n\n` +
+            `### 💡 Explicación del Método\n` +
+            `${currentQuestion.explanationBase}`
+          );
+        }
       } catch (e) {
-        setFeedback("Hubo un error al contactar al Agente de IA. La respuesta correcta era: " + currentQuestion.correctAnswer);
+        setFeedback(
+          `### ⚠️ Error de Conexión\n` +
+          `Hubo un problema de red al contactar al Agente de IA.\n\n` +
+          `### ✅ Respuesta Correcta\n` +
+          `**${currentQuestion.correctAnswer}**\n\n` +
+          `### 💡 Explicación del Método\n` +
+          `${currentQuestion.explanationBase}`
+        );
       } finally {
         setIsLoadingFeedback(false);
       }

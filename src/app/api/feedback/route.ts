@@ -45,10 +45,21 @@ Escribe un mensaje de retroalimentación constructiva, en español, dirigido al 
 
     return NextResponse.json({ feedback });
 
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error in AI feedback API:', error);
+    let errorMessage = 'Ocurrió un error al generar la retroalimentación.';
+    
+    const errorStr = error?.message || error?.toString() || '';
+    if (errorStr.includes('API key was reported as leaked') || errorStr.includes('leaked')) {
+      errorMessage = 'Error: Tu GEMINI_API_KEY ha sido reportada como filtrada (leaked) en internet y Google la ha desactivado por seguridad. Por favor, genera otra clave API en Google AI Studio y actualiza tu archivo .env.local.';
+    } else if (errorStr.includes('API key not valid') || errorStr.includes('not valid')) {
+      errorMessage = 'Error: Tu GEMINI_API_KEY no es válida. Por favor, verifica la clave API en tu archivo .env.local.';
+    } else {
+      errorMessage = `Error: ${errorStr}`;
+    }
+
     return NextResponse.json(
-      { error: 'Ocurrió un error al generar la retroalimentación.' },
+      { error: errorMessage },
       { status: 500 }
     );
   }
